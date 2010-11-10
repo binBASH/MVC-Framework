@@ -1,0 +1,40 @@
+{{comment:this comment will be ignored}}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+
+        <!-- Powered by some MVC // www.sodatech.com -->
+
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+{{if:meta_description}}
+        <meta name="description" content="{{meta_description}}" />
+{{end:}}
+{{if:meta_keywords}}
+        <meta name="keywords" content="{{meta_keywords}}" />
+{{end:}}
+{{additional_meta}}
+{{if:title}}
+        <title>{{title}}</title>
+{{end:}}
+
+        <link rel="stylesheet" type="text/css" href="/_css/site.css" media="all" />
+{{custom_css}}
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/effects.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/dragdrop.js"></script>
+{{head_js}}
+
+    </head>
+    <body>
+{{include:inc.html}}
+
+{{content}}
+    
+{{if:custom_js}}
+<script type="text/javascript">
+{{custom_js}}
+</script>
+{{end:}}
+    </body>
+</html>

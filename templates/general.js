@@ -1,0 +1,1 @@
+// This is the central Javascript code to be included on every page
