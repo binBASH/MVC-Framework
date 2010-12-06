@@ -1,1 +1,49 @@
 /* Site static CSS */
+html { margin:0px; padding:0px; }
+body { margin:auto; font-family:Arial,Helvetica,sans-serif; line-height:16px; }
+
+h1,h2,h3,h4,h5,h6 { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; color:#C61800; text-shadow:0 0 1px #C61800; }
+ol,ul { list-style:none outside none; }
+a:link,a:visited,a:active,a:hover { text-decoration:none; }
+input, textarea { border:1px solid #D8D3B6; -moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.2); }
+input:hover, textarea:hover, input:focus, textarea:focus, input:active, textarea:active { -moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.5); }
+
+.bold { font-weight:bold; }
+.italic { font-style:italic; }
+
+.tab1 { margin-left:10px; }
+
+li.button { -moz-box-shadow:0 0 3px #999999; background:-moz-linear-gradient(center top , #F6F6F6, #DFDFDF) repeat scroll 0 0 transparent; border:1px solid white; color:#666666; float:left; padding:3px 6px 4px; font-weight:bold; }
+
+div.centered { text-align:left; margin:0 auto; }
+div.medium { width:350px; }
+
+.website { width:960px; text-align:left; margin:0 auto; }
+.admin-external { margin-top:15px; width:960px; text-align:left; margin:0 auto; }
+.admin-internal { margin-left:24.0769em; width:auto; margin-top:15px; margin-right:15px; }
+
+.box { border:1px solid #8d8d8d; -moz-box-shadow:5px 5px 5px #aaa; background-color:#eeeeee; -moz-border-radius:5px; }
+
+.box_title { line-height:23px; font-size:10pt; padding-left:10px; font-weight:bold; color:#fff; border-bottom:1px solid #414e41; }
+.box_content { font-size:8pt; padding:10px; background:-moz-linear-gradient(center top, #F6F6F6, #DFDFDF) repeat scroll 0 0 transparent; }
+
+.box_blue { background:-moz-linear-gradient(center top, #72C6E4, #0C5FA5) repeat scroll 0 0 transparent; }
+
+.formline { line-height:25px; }
+
+.block {
+    -moz-border-radius:5px 5px 5px 5px;
+    -moz-box-shadow:0 0 3px #999999;
+    background:-moz-linear-gradient(center top , #F6F6F6, #DFDFDF) repeat scroll 0 0 transparent;
+    border:1px solid #999999;
+    margin-bottom:12px;
+    padding:10px;
+    position:relative;
+}
+
+#sidebar { width:23.0769em; float:left; }
+#sidebar .box { width:22.182em; margin-left:10px; }
+
+#render_time { font-size:7pt; text-align:center; margin-top:20px; }
+
+#error_msg { border:1px solid #000; padding:3px; margin-bottom:9px; }

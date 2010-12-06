@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
 
-        <!-- Powered by some MVC // www.sodatech.com -->
+        <!-- Powered by binBASH's MVC-Framework // https://github.com/binBASH/MVC-Framework -->
 
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 {{if:meta_description}}
@@ -20,17 +20,15 @@
         <link rel="stylesheet" type="text/css" href="/_css/site.css" media="all" />
 {{custom_css}}
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/effects.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/dragdrop.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
 {{head_js}}
 
     </head>
     <body>
-{{include:inc.html}}
-
 {{content}}
-    
+
+<div id="render_time" class="centered medium">### render_time ###</div>
 {{if:custom_js}}
 <script type="text/javascript">
 {{custom_js}}

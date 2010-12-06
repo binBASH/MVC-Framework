@@ -40,7 +40,7 @@ class Test extends Application
     function testdb() {
         $this->set_no_general_template();
         $this->set_no_template();
-        FW::add_header('Content-Type', 'text/plain');
+        add_header('Content-Type', 'text/plain');
         $db = DB::get_connection(Config::db_driver, Config::db_host, Config::db_username, Config::db_password, Config::db_name);
         $res = $db->query("SELECT * FROM languages");
         $rows = $db->get_rows($res);
@@ -48,6 +48,9 @@ class Test extends Application
             echo json_encode($row) . "\n";
         }
         $db->close();
+    }
+    
+    function testpost() {
     }
 
     function get_allowed_methods() {
@@ -57,7 +60,8 @@ class Test extends Application
             'nomaintpl',
             'testajax',
             'testplugin',
-            'testdb'
+            'testdb',
+            'testpost'
         );
     }
 }
