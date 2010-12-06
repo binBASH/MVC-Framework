@@ -1,0 +1,13 @@
+A lightweight MVC style framework for developing high end web application in PHP 5.3 and higher.
+It was built for speed, optimized size, enhanced code readability robustness and to keep
+rapid application in mind.
+
+Features include
+	* Abstraction
+	* Compiled templates
+	* Advanced caching
+
+Planned features
+	* ESI (Edge Side Includes)
+	* Big Pipe
+	* Mistral Integration
